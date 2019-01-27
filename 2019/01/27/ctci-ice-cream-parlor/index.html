@@ -13,9 +13,9 @@
     <meta name="keyword"  content="프로그래머, Dony, ICBMA, Dony&#39;s Blog">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Welcome to Dony&#39;s Blog-갈라파고스를 꿈꾸는 개발자</title>
+    <title>Hash Tables: Ice Cream Parlor-갈라파고스를 꿈꾸는 개발자</title>
 
-    <link rel="canonical" href="/2019/01/10/hello-world/">
+    <link rel="canonical" href="/2019/01/27/ctci-ice-cream-parlor/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -123,7 +123,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/gala.jpg')
+        background-image: url('/img/home-bg-jeep.jpg')
     }
 </style>
 <header class="intro-header">
@@ -133,16 +133,24 @@
                 <div class="post-heading">
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/hackerrank" title="hackerrank">
+                            hackerrank
+                        </a>
+                        
+                        <a class="tag" href="/tags/golang" title="golang">
+                            golang
+                        </a>
+                        
                     </div>
-                    <h1>Welcome to Dony&#39;s Blog</h1>
-                    <h2 class="subheading">Hello World, Hello Blog</h2>
+                    <h1>Hash Tables: Ice Cream Parlor</h1>
+                    <h2 class="subheading">Golang의 Map을 활용한 알고리즘 풀이</h2>
                     <span class="meta">
 			Posted by 
 			
 			    Hotpotato00
 			 
 			on 
-			Thursday, January 10, 2019
+			Sunday, January 27, 2019
                         
                     </span>
                 </div>
@@ -168,24 +176,40 @@
                 <header>
                     <h2>TOC</h2>
                 </header>
-                <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#hello-world">Hello World!</a></li>
-</ul></li>
-</ul>
-</nav>
                 
                 
+                <p>##Hash Tables: Ice Cream Parlor</p>
 
 <blockquote>
-<p>“Yeah It&rsquo;s on. ”</p>
+<p>먼저 <a href="https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem" title="ice-cream">문제</a>의 요지는 다음과 같다.</p>
+
+<p><strong>t번</strong>의 상황에 대해 맛이 <strong>n개</strong>인 <strong>아이스크림</strong>이 주어진다. 이 때 각 맛에 따라 가격 <em>(Cost)</em> 이 다르고, 주어지는 돈 <em>(Money)</em> 으로 살 수 있는 맛이 몇 번째 맛인지 그 *index*를 구하는 것이 문제의 요지이다.</p>
 </blockquote>
 
-<p>드디어 될것인가..</p>
+<p>아래는 해당 링크.
+<a href="https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem/">https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem/</a></p>
 
-<h2 id="hello-world">Hello World!</h2>
+<p>처음에는 당연히 이중 for문을 이용해서 풀었으나, 당연히 <em>Fail</em></p>
+
+<blockquote>
+<blockquote>
+<p>그래서 <a href="https://www.hackerrank.com" title="hackerrank">Hackerrank</a>의 가장 큰 장점인 <a href="https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/forum">Discussions</a>을 활용하였고,
+<a href="https://leetcode.com/articles/two-sum/">Two-Sum</a>이란 *Hash-Map*을 활용한 알고리즘을 확인할 수 있었다.</p>
+</blockquote>
+</blockquote>
+
+<pre><code class="language-c">// Complete the whatFlavors function below.
+func whatFlavors(cost []int32, money int32) {
+     flavorsMap := make(map[int32]int)
+    for i := range cost {
+      f1 := money - cost[i]
+      if _, ok := flavorsMap[f1] ; ok {
+        fmt.Printf(&quot;%d %d\n&quot;, flavorsMap[f1]+1, i+1)
+      }
+      flavorsMap[cost[i]] = i
+    }
+}
+</code></pre>
 
 
                 
@@ -193,11 +217,11 @@
                 <hr>
                 <ul class="pager">
                     
-                    
-                    <li class="next">
-                        <a href="/2019/01/27/ctci-ice-cream-parlor/" data-toggle="tooltip" data-placement="top" title="Hash Tables: Ice Cream Parlor">Next
-                            Post &rarr;</a>
+                    <li class="previous">
+                        <a href="/2019/01/10/hello-world/" data-toggle="tooltip" data-placement="top" title="Welcome to Dony&#39;s Blog">&larr;
+                            Previous Post</a>
                     </li>
+                    
                     
                 </ul>
 

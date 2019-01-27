@@ -10,5 +10,14 @@
 	<atom:link href="http://Hotpotato00.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Tech</title>
+      <link>http://Hotpotato00.github.io/categories/tech/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://Hotpotato00.github.io/categories/tech/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

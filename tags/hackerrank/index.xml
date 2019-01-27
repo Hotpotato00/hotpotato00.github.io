@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Dony&#39;s Blog</title>
-    <link>http://Hotpotato00.github.io/post/</link>
-    <description>Recent content in Posts on Dony&#39;s Blog</description>
+    <title>hackerrank on Dony&#39;s Blog</title>
+    <link>http://Hotpotato00.github.io/tags/hackerrank/</link>
+    <description>Recent content in hackerrank on Dony&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kr-ko</language>
     <lastBuildDate>Sun, 27 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://Hotpotato00.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://Hotpotato00.github.io/tags/hackerrank/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,17 +23,6 @@ t번의 상황에 대해 맛이 n개인 아이스크림이 주어진다. 이 때
  아래는 해당 링크. https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem/
 처음에는 당연히 이중 for문을 이용해서 풀었으나, 당연히 Fail
   그래서 Hackerrank의 가장 큰 장점인 Discussions을 활용하였고, Two-Sum이란 *Hash-Map*을 활용한 알고리즘을 확인할 수 있었다.</description>
-    </item>
-    
-    <item>
-      <title>Welcome to Dony&#39;s Blog</title>
-      <link>http://Hotpotato00.github.io/2019/01/10/hello-world/</link>
-      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://Hotpotato00.github.io/2019/01/10/hello-world/</guid>
-      <description>  “Yeah It&amp;rsquo;s on. ”
- 드디어 될것인가..
-Hello World! </description>
     </item>
     
   </channel>
