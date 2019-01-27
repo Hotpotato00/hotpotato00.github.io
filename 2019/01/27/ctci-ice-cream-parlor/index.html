@@ -187,7 +187,7 @@
 <blockquote>
 <p>먼저 <a href="https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem" title="ice-cream">문제</a>의 요지는 다음과 같다.</p>
 
-<p><strong>t번</strong>의 상황에 대해 맛이 <strong>n개</strong>인 <strong>아이스크림</strong>이 주어진다. 이 때 각 맛에 따라 가격 <em>(Cost)</em> 이 다르고, 주어지는 돈 <em>(Money)</em> 으로 살 수 있는 맛이 몇 번째 맛인지 그 *index*를 구하는 것이 문제의 요지이다.</p>
+<p><strong>t번</strong>의 상황에 대해 맛이 <strong>n개</strong>인 <strong>아이스크림</strong>이 주어진다. 이 때 각 맛에 따라 가격 <em>(Cost)</em> 이 다르고, 주어지는 돈 <em>(Money)</em> 으로 살 수 있는 맛이 몇 번째 맛인지 그 *index*를 구하는 것이 문제의 요지.</p>
 </blockquote>
 
 <p>해당 링크.<a href="https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem/">https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem/</a></p>
@@ -196,15 +196,14 @@
 
 <blockquote>
 <p>그래서 <a href="https://www.hackerrank.com" title="hackerrank">Hackerrank</a>의 가장 큰 장점인 <a href="https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/forum">Discussions</a>을 활용하였고,
-<a href="https://leetcode.com/articles/two-sum/">Two-Sum</a>이란 *Hash-Map*을 활용한 알고리즘을 확인할 수 있었다.</p>
+<a href="https://leetcode.com/articles/two-sum/">Two-Sum</a>이란 <em>Hash-Map</em> 활용한 알고리즘을 확인할 수 있었다.</p>
 </blockquote>
 
-<pre><code class="language-c">// Complete the whatFlavors function below.
-func whatFlavors(cost []int32, money int32) {
-     flavorsMap := make(map[int32]int)
+<pre><code class="language-go">func whatFlavors(cost []int32, money int32) {
+    flavorsMap := make(map[int32]int)
     for i := range cost {
       f1 := money - cost[i]
-      // Golang의 Map에 key 존재 여부 
+      // Golang의 Map에 key 존재 여부
       if _, ok := flavorsMap[f1] ; ok {
         fmt.Printf(&quot;%d %d\n&quot;, flavorsMap[f1]+1, i+1)
       }
