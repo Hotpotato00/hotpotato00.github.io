@@ -13,9 +13,9 @@
     <meta name="keyword"  content="프로그래머, Dony, ICBMA, Dony&#39;s Blog">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Hash Tables: Ice Cream Parlor-갈라파고스를 꿈꾸는 개발자</title>
+    <title>Book-갈라파고스를 꿈꾸는 개발자</title>
 
-    <link rel="canonical" href="/2019/01/27/ctci-ice-cream-parlor/">
+    <link rel="canonical" href="/categories/book/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -128,39 +128,14 @@
 
 
 
-
-<style type="text/css">
-    header.intro-header {
-        background-image: url('/img/home-bg-jeep.jpg')
-    }
-</style>
-<header class="intro-header">
+<header class="intro-header" style="background-image: url('/img/gala.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        
-                        <a class="tag" href="/tags/hackerrank" title="hackerrank">
-                            hackerrank
-                        </a>
-                        
-                        <a class="tag" href="/tags/golang" title="golang">
-                            golang
-                        </a>
-                        
-                    </div>
-                    <h1>Hash Tables: Ice Cream Parlor</h1>
-                    <h2 class="subheading">Golang의 Map을 활용한 알고리즘 풀이</h2>
-                    <span class="meta">
-			Posted by 
-			
-			    Hotpotato00
-			 
-			on 
-			Sunday, January 27, 2019
-                        
-                    </span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Dony&#39;s Blog </h1>
+                    
+		    <span class="subheading">여유를 가질 때，행복해진다.</span>
                 </div>
             </div>
         </div>
@@ -169,114 +144,137 @@
 
 
 
-
-<article>
-    <div class="container">
-        <div class="row">
-
+  
+<div class="container">
+    <div class="row">
+        
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
             
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
 
-                
-                <header>
-                    <h2>TOC</h2>
-                </header>
-                
-                
-                <p>Hash Tables: Ice Cream Parlor</p>
-
-<blockquote>
-<p>먼저 <a href="https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem" title="ice-cream">문제</a>의 요지는 다음과 같다.</p>
-
-<p><strong>t번</strong>의 상황에 대해 맛이 <strong>n개</strong>인 <strong>아이스크림</strong>이 주어진다. 이 때 각 맛에 따라 가격 <em>(Cost)</em> 이 다르고, 주어지는 돈 <em>(Money)</em> 으로 살 수 있는 맛이 몇 번째 맛인지 그 *index*를 구하는 것이 문제의 요지.</p>
-</blockquote>
-
-<p>해당 링크.<a href="https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem/">https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem/</a></p>
-
-<p>처음에는 당연히 이중 for문을 이용해서 풀었으나, 당연히 <em>Fail</em></p>
-
-<blockquote>
-<p>그래서 <a href="https://www.hackerrank.com" title="hackerrank">Hackerrank</a>의 가장 큰 장점인 <a href="https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/forum">Discussions</a>을 활용하였고,
-<a href="https://leetcode.com/articles/two-sum/">Two-Sum</a>이란 <em>Hash-Map</em> 활용한 알고리즘을 확인할 수 있었다.</p>
-</blockquote>
-
-<pre><code class="language-go">func whatFlavors(cost []int32, money int32) {
-    flavorsMap := make(map[int32]int)
-    for i := range cost {
-      f1 := money - cost[i]
-      // Golang의 Map에 key 존재 여부
-      if _, ok := flavorsMap[f1] ; ok {
-        fmt.Printf(&quot;%d %d\n&quot;, flavorsMap[f1]+1, i+1)
-      }
-      flavorsMap[cost[i]] = i
-    }
-}
-</code></pre>
-
-
-                
-
-                <hr>
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/2019/01/10/hello-world/" data-toggle="tooltip" data-placement="top" title="Welcome to Dony&#39;s Blog">&larr;
-                            Previous Post</a>
-                    </li>
-                    
-                    
-                    <li class="next">
-                        <a href="/2019/03/06/book_review_1984/" data-toggle="tooltip" data-placement="top" title="Book Review : 1984 와 멋진 신세계(Brave New World)">Next
-                            Post &rarr;</a>
-                    </li>
-                    
-                </ul>
-
-                
-<div id="disqus-comment"></div>
-
-
-
-            </div>
-            
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                
-                
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                    </div>
-                </section>
-                
-
-                
-                
-            </div>
+<div class="post-preview">
+    <a href="http://Hotpotato00.github.io/2019/03/06/book_review_1984/">
+        <h2 class="post-title">
+            Book Review : 1984 와 멋진 신세계(Brave New World)
+        </h2>
+	
+        <h3 class="post-subtitle">
+            디스토피아에 대한 다양한 시각
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            Book Review : 1984 와 멋진 신세계(Brave New World) 디스토피아(Dystopia)에 대한 다양한 시각 먼저 리뷰를 시작하기전에 디스토피아(Dystopia)의 의미에 대해 한번씩 읽어보길 바란다.
+유토피아와 반대되는 가상 사회 로 이해하면 쉽게 접근 가능하다.
+다시 리뷰에 앞서 1984 와 멋진신세계를 개인적으로 가장 잘 비교했다고 생각하는 아래의 짧은 삽화를 보길 권장한다.
+처음 이 삽화를 봤을 시점의 나는 멋진신세계만 읽어본 상태였고, 1984를 꼭 읽어봐야겠다는 결심을 하게 됐다.
+당시 멋진신세계를 읽으면서 3가지의 생각해볼만한 거리를 적어봤었다.
+       
         </div>
-    </div>
-</article>
+    </a>
+    <p class="post-meta">
+    Posted by Hotpotato00 Wednesday, March 6, 2019
+    </p>
+</div>
+<hr>
+
+
+            
+
+
+
+       	</div>
+        
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+             
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+    </section>
+    
+
+    
+    <section class="visible-md visible-lg">
+        <hr><h5><a href="">ABOUT ME</a></h5>
+        <div class="short-about">
+            
+            <img src="/img/sd.png" />
+            
+            
+                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+            
+           
+           <ul class="list-inline"> 
+               
+               <li>
+                   <a href="http://Hotpotato00.github.io/categories/book/index.xml" rel="alternate" type="application/rss+xml" title="Dony&#39;s Blog" >
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/hotpotato00">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+    
+    
+
+    
+    
+</div>
+
+	</div>
+</div>
+
 
 
 
@@ -288,7 +286,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href="" rel="alternate" type="application/rss+xml" title="Dony&#39;s Blog" >
+                       <a href="http://Hotpotato00.github.io/categories/book/index.xml" rel="alternate" type="application/rss+xml" title="Dony&#39;s Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>

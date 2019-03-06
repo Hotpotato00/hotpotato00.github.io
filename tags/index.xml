@@ -6,9 +6,37 @@
     <description>Recent content in Tags on Dony&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kr-ko</language>
+    <lastBuildDate>Wed, 06 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://Hotpotato00.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1984</title>
+      <link>http://Hotpotato00.github.io/tags/1984/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://Hotpotato00.github.io/tags/1984/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>book_review</title>
+      <link>http://Hotpotato00.github.io/tags/book_review/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://Hotpotato00.github.io/tags/book_review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>brave_new_world</title>
+      <link>http://Hotpotato00.github.io/tags/brave_new_world/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://Hotpotato00.github.io/tags/brave_new_world/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>golang</title>
@@ -25,6 +53,15 @@
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://Hotpotato00.github.io/tags/hackerrank/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>책 리뷰</title>
+      <link>http://Hotpotato00.github.io/tags/%EC%B1%85-%EB%A6%AC%EB%B7%B0/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://Hotpotato00.github.io/tags/%EC%B1%85-%EB%A6%AC%EB%B7%B0/</guid>
       <description></description>
     </item>
     
